@@ -1,51 +1,18 @@
 # interact-test-task
-Prerequisites
+
+# Playwright Automated Blog Post Test
+
+This project automates the process of logging into a web application, creating and publishing a blog post with text and an image, and verifying its presence and accuracy. The automation is built with Playwright and designed to support multiple browsers.
+
+---
+
+## Prerequisites
+
 Ensure you have the following installed:
 
-Node.js (version 14 or higher)
-npm (version 6 or higher)
-Playwright
-Installation
-Clone the repository:
+- **Node.js** (version 14 or higher)
+- **npm** (version 6 or higher)
+- **Playwright**
 
-bash
-Copy code
-git clone <repository-url>
-Install dependencies:
+## Installation
 
-bash
-Copy code
-npm install
-Install Playwright browsers:
-
-bash
-Copy code
-npx playwright install
-Environment Setup
-Setting up Environment Variables
-To manage sensitive information securely, credentials and URLs should be stored in a .env file at the project root (not included in the repository for security reasons). Create this file as follows:
-
-plaintext
-Copy code
-USERNAME=<your-username>
-PASSWORD=<your-password>
-BASE_URL=<application-url>
-Environment Configuration
-Playwright configures browsers and test parameters via the playwright.config.ts file. Ensure that configurations for browser type, base URL, and timeouts are set appropriately.
-
-Test Execution
-Run the tests:
-
-bash
-Copy code
-npx playwright test
-Run tests in a specific browser (e.g., Chrome):
-
-bash
-Copy code
-npx playwright test --project=chromium
-View the Test Report (after tests complete):
-
-bash
-Copy code
-npx playwright show-report
