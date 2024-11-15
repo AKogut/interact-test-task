@@ -19,9 +19,14 @@ Ensure you have the following installed:
 git clone <repository-url>
 ```
 
-**Install dependencies:**
+**Install project dependencies:**
 ```
-npm init playwright@latest
+npm install
+```
+
+**Install Playwright:**
+```
+npx playwright install
 ```
 
 ## Test Execution
